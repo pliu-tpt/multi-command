@@ -18,6 +18,17 @@ This extension contributes the following settings:
 
 * `multi-command.commands`: a list of groups of Terminal to Open
 
+Here's an example of a set of commands in `settings.json` :
+```json
+{
+    "multi-command.commands": {
+        "My first bunch of commands": {
+            "Terminal 1": "ls path_to/first_folder",
+            "Terminal 2": "ls path_to/second_folder"
+        }
+    }
+}
+```
 ## Known Issues
 
 Calling out known issues can help limit users opening duplicate issues against your extension.
