@@ -23,10 +23,10 @@ export function activate(context: vscode.ExtensionContext) {
 
         if (selectedTitle) {
           const terminalCommands = commands[selectedTitle];
-          Object.keys(terminalCommands).forEach((terminalTitle, index) => {
+          Object.keys(terminalCommands).sort().forEach((terminalTitle, index) => {
             const command = terminalCommands[terminalTitle];
             const terminal = vscode.window.createTerminal(
-              `${selectedTitle} - ${terminalTitle} (${index + 1})`,
+              `${index + 1} - ${terminalTitle}`,
             );
             terminal.sendText(command);
             terminal.show();
