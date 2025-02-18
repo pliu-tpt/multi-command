@@ -13,12 +13,12 @@ Use ctrl+shift+r or cmd+shift+r to open the list of sets.
 
 This extension contributes the following settings:
 
-* `multi-command.commands`: a list of groups of Terminal to Open
+* `multi-terminals.commands`: a list of groups of Terminal to Open
 
 Here's an example of a set of commands in `settings.json` :
 ```json
 {
-    "multi-command.commands": {
+    "multi-terminals.commands": {
         "My first set of terminals": {
             "Terminal 1": "ls path_to/first_folder",
             "Terminal 2": "ls path_to/second_folder"

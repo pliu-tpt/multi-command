@@ -1,6 +1,6 @@
 {
-  "name": "multi-command",
-  "displayName": "multi-command",
+  "name": "multi-terminals",
+  "displayName": "multi-terminals",
   "description": "Open multiple configurable windows at once (for repetitive tasks)",
   "version": "0.0.1",
   "icon": "assets/icon.png",
@@ -16,19 +16,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:multi-command.openMultipleTerminals"
+    "onCommand:multi-terminals.openMultipleTerminals"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "multi-command.openMultipleTerminals",
+        "command": "multi-terminals.openMultipleTerminals",
         "title": "Open Multiple Terminals"
       }
     ],
     "keybindings": [
       {
-        "command": "multi-command.openMultipleTerminals",
+        "command": "multi-terminals.openMultipleTerminals",
         "key": "cmd+shift+r",
         "mac": "cmd+shift+r",
         "linux": "ctrl+shift+r",

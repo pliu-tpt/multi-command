@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 
 suite('Extension Tests', () => {
   test('Extension activates successfully', async () => {
-    const extension = vscode.extensions.getExtension('your-publisher.multi-command');
+    const extension = vscode.extensions.getExtension('your-publisher.multi-terminals');
     assert.ok(extension, 'Extension not found');
 
     await extension?.activate();
@@ -12,6 +12,6 @@ suite('Extension Tests', () => {
 
   test('Command is registered', async () => {
     const commands = await vscode.commands.getCommands(true);
-    assert.ok(commands.includes('multi-command.openMultipleTerminals'), 'Command not registered');
+    assert.ok(commands.includes('multi-terminals.openMultipleTerminals'), 'Command not registered');
   });
 });

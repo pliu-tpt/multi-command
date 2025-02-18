@@ -9,11 +9,11 @@ type CommandsConfig = { [title: string]: { [terminalTitle: string]: string } };
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "multi-command.openMultipleTerminals",
+      "multi-terminals.openMultipleTerminals",
       async () => {
         const config = vscode.workspace.getConfiguration();
         const commands =
-          config.get<CommandsConfig>("multi-command.commands") || {};
+          config.get<CommandsConfig>("multi-terminals.commands") || {};
         const titles = Object.keys(commands);
 
         const selectedTitle = await vscode.window.showQuickPick(titles, {

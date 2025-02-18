@@ -32,7 +32,7 @@ suite('Terminal Opening Order', () => {
       } as vscode.Terminal;
     };
 
-    await vscode.commands.executeCommand('multi-command.openMultipleTerminals');
+    await vscode.commands.executeCommand('multi-terminals.openMultipleTerminals');
 
     assert.deepStrictEqual(terminalTitles, [
       'First Set - Terminal A (1)',
