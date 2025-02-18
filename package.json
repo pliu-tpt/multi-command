@@ -3,6 +3,12 @@
   "displayName": "multi-command",
   "description": "Open multiple configurable windows at once (for repetitive tasks)",
   "version": "0.0.1",
+  "icon": "assets/icon.png",
+  "publisher": "pliu-ai",
+  "galleryBanner": {
+    "color": "#ffffff",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.68.1"
   },
